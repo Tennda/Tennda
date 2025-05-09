@@ -12,3 +12,22 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.morphic{
+/* From https://css.glass */
+background: rgba(206, 207, 211, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.2px);
+-webkit-backdrop-filter: blur(19.2px);
+border: 1px solid rgba(206, 207, 211, 1);
+}
+.morphic2{
+/* From https://css.glass */
+background: rgba(206, 207, 211, 0.34);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.2px);
+-webkit-backdrop-filter: blur(19.2px);
+border: 1px solid rgba(206, 207, 211, 1);
+}
