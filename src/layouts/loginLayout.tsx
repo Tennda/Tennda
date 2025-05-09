@@ -7,13 +7,12 @@ import elipice4 from '../../assets/images/img_vector_463x463.png'
 import faviconimg from '../../assets/images/favicon1.png'
 export default function DashboardLayout({ children, title }: { children: React.ReactNode, title?: string }) {
     return (
-        <div className=" h-[100vh] ">
-
-            <section className="bg-[#c8cace] relative h-[100vh] flex flex-col ">
-                <section className='hidden md:block'>
+        <div className="">
+            <section className="bg-[#c8cace] relative min-h-screen flex flex-col ">
+                <section className='hidden lg:block'>
                     <Navbar title={title} />
                 </section>
-                <div className=' flex flex-col justify-center items-center h-[80vh] relative '>
+                <div className=' flex flex-co relative '>
                     <div className="absolute top-[0px] left-0">
                         <Image src={elipice2} alt="" width={200} height={200} className="" />
                     </div>
@@ -27,7 +26,7 @@ export default function DashboardLayout({ children, title }: { children: React.R
                         <Image src={elipice4} alt="" width={400} height={463} />
 
                     </div>
-                    <div className='z-20 w-full flex items-center h-[100vh] justify-center pt-10'>
+                    <div className='z-20 w-full h-full '>
                         {children}
                     </div>
                     <div className='absolute bottom-[-75px] right-0 hidden md:block'>
