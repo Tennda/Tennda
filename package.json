@@ -1,29 +1,15 @@
 {
-  "name": "tennda",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@chakra-ui/next-js": "^2.4.2",
-    "@chakra-ui/react": "^2.10.7",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "framer-motion": "^12.10.1",
-    "next": "15.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "name": "tennda",
+    "version": "1.0.0",
+    "description": "Tennda application with separate frontend and backend",
+    "scripts": {
+      "start:frontend": "cd frontend && npm run dev",
+      "start:backend": "cd backend && ./venv/bin/python app/app.py",
+      "start": "concurrently 'npm run start:frontend' 'npm run start:backend'",
+      "install:all": "npm install && cd frontend && npm install && cd ../backend && ./venv/bin/pip install -r requirements.txt"
+    },
+    "dependencies": {
+      "concurrently": "^8.2.0"
+    }
   }
-}
+  
